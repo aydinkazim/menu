@@ -2,12 +2,14 @@
 
 class MealsController < ApplicationController
   layout -> { ApplicationLayout }
-  
+
   def index
-    render Meals::IndexView.new
+    meals = Meal.all
+    render Meals::IndexView.new(meals)
   end
 
   def show
-    render Meals::ShowView.new
+    meal = Meal.find(params[:id])
+    render Meals::ShowView.new(meal)
   end
 end
