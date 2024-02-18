@@ -9,9 +9,7 @@ class MealFormComponent < ApplicationComponent
   end
 
   def template
-    div(class: 'container') do
-      h1 { 'MealForm' }
-      p { 'Find me in app/views/components/meal_form_component.rb' }
+    div do
       bootstrap_form_for(@meal) do |f|
         f.text_field(:name)
         f.text_field(:description)
