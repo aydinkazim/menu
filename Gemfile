@@ -65,4 +65,5 @@ end
 gem 'phlex-rails'
 
 gem 'bootstrap', '~> 5.3.2'
+gem 'bootstrap_form', '~> 5.4'
 gem 'sassc-rails'

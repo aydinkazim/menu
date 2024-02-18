@@ -7,7 +7,7 @@ module Meals
     end
 
     def template
-      render MealFormComponent
+      render MealFormComponent.new(@meal)
     end
   end
 end
