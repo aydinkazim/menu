@@ -12,4 +12,9 @@ class MealsController < ApplicationController
     meal = Meal.find(params[:id])
     render Meals::ShowView.new(meal)
   end
+
+  def new
+    meal = Meal.new
+    render Meals::NewView.new(meal)
+  end
 end

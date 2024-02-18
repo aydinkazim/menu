@@ -1,8 +1,13 @@
 # frozen_string_literal: true
 
-class Meals::NewView < ApplicationView
-  def template
-    h1 { "Meals::New" }
-    p { "Find me in app/views/meals/new_view.rb" }
+module Meals
+  class NewView < ApplicationView
+    def initialize(meal)
+      @meal = meal
+    end
+
+    def template
+      render MealFormComponent
+    end
   end
 end
