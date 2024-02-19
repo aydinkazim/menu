@@ -16,7 +16,7 @@ class ApplicationLayout < ApplicationView
         javascript_importmap_tags
       end
 
-      body do
+      body(class: 'd-flex flex-column vh-100') do
         render HeaderComponent
         main(class: 'container', &block)
         render FooterComponent
