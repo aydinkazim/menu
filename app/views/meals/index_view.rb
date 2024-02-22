@@ -7,8 +7,11 @@ module Meals
     end
 
     def template
-      h1 { 'Meals index' }
-      p { 'Find me in app/views/meals/index_view.rb' }
+      div(class: 'row row-cols-3') do
+        @meals.each do |meal|
+          render MealCardComponent.new(meal)
+        end
+      end
     end
   end
 end

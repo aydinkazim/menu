@@ -1,12 +1,13 @@
 # frozen_string_literal: true
 
 class Meals::ShowView < ApplicationView
-  def initialize(blog)
-    @blog = blog
+  def initialize(meal)
+    @meal = meal
   end
 
   def template
-    h1 { 'Meals show' }
-    p { 'Find me in app/views/meals/show_view.rb' }
+    em { @meal.category.name }
+    h1 { @meal.name }
+    p { @meal.description }
   end
 end
