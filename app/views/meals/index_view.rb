@@ -7,9 +7,11 @@ module Meals
     end
 
     def template
-      div(class: 'row row-cols-3') do
-        @meals.each do |meal|
-          render MealCardComponent.new(meal)
+      div(class: 'row row-cols-3 g-3') do
+        div(class: 'col') do
+          @meals.each do |meal|
+            render MealCardComponent.new(meal)
+          end
         end
       end
     end
