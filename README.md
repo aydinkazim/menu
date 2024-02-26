@@ -1,24 +1,13 @@
-# README
+# Building a Basic CRUD Application for Restaurant Menus in Rails 🤪
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Built with:
 
-Things you may want to cover:
+- **[Phlex 💪](https://www.phlex.fun/):** Phlex lets you compose web views in pure Ruby — kind of like JSX, but not really anything like JSX. It’s super-fast and thread-safe.
 
-* Ruby version
+- **[bootstrap_form](https://github.com/bootstrap-ruby/bootstrap_form):** bootstrap_form is a Rails form builder that makes it super easy to integrate Bootstrap v5-style forms into your Rails application. It provides form helpers that augment the Rails form helpers.
 
-* System dependencies
+---
 
-* Configuration
+![Jinx](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjRxZjh5ZG13YWk5ZmRodHJ1c3d4YmdocDIxcWpyanY3eWdtZXZ1bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jkThpZA7ZMC1fiJOAZ/giphy.gif)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+> Jinx | Arcane
