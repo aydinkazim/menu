@@ -18,7 +18,21 @@ class MealsController < ApplicationController
     render Meals::NewView.new(@meal)
   end
 
+  def create
+    @meal = Meal.new(meal_params)
+    if @meal.save
+      redirect_to @meal, notice: 'Meal was successfully created.'
+    else
+      puts @meal.errors.full_messages
+      render Meals::NewView.new(@meal)
+    end
+  end
+
   def set_meal
     @meal = Meal.find(params[:id])
+  end
+
+  def meal_params
+    params.require(:meal).permit(:name, :description, :category_id)
   end
 end

@@ -13,6 +13,8 @@ class MealFormComponent < ApplicationComponent
       bootstrap_form_for(@meal) do |f|
         f.text_field(:name)
         f.text_field(:description)
+        f.collection_select(:category_id, Category.all, :id, :name)
+        f.submit
       end
     end
   end

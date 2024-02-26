@@ -8,8 +8,8 @@ module Meals
 
     def template
       div(class: 'row row-cols-3 g-3') do
-        div(class: 'col') do
-          @meals.each do |meal|
+        @meals.each do |meal|
+          div(class: 'col') do
             render MealCardComponent.new(meal)
           end
         end
